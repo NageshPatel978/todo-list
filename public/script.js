@@ -52,10 +52,23 @@ console.log(data);
         });
         taskelement.remove();
     });
+
+  
     
     let completebutton = taskelement.querySelector(".complete");
     
-    completebutton.addEventListener("click", () => {
+    completebutton.addEventListener("click", async() => {
+        await fetch(`/todo/${data._id}`, {
+            method: "PATCH",
+            
+            headers: {
+                "Content-Type": "application/json"
+            },
+            
+            body: JSON.stringify({
+                completed: completed
+            })
+        });
         taskelement.classList.toggle("completed");
     });
 });
@@ -118,7 +131,6 @@ completebutton.addEventListener("click", async () => {
 
     taskelement.classList.toggle("completed");
 });
-
 
 
 });
