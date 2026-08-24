@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="todo-app">
+
+        <!-- Header -->
+        <header class="todo-header">
+            <div class="logo">
+                <img src="tick.svg" alt="Todo">
+                <h1>Todo List</h1>
+            </div>
+
+           
+        </header>
+
+
+        <!-- Add Task Section -->
+        <section class="add-section">
+
+            <input
+                type="text"
+                class="task-input"
+                placeholder="What needs to be done?"
+            >
+
+            <select class="priority">
+                <option value="">Priority</option>
+                <option value="high">High</option>
+                <option value="medium">Medium</option>
+                <option value="low">Low</option>
+            </select>
+
+            <input
+                type="date"
+                class="date-input"
+            >
+
+            <button class="add-task">
+                + Add Task
+            </button>
+
+        </section>
+
+
+        <!-- Tasks -->
+         <section class="tasks-container">
+
+            <!-- These are examples for now  -->
+
+            <!-- <div class="task completed">
+
+                 <div class="task-info">
+                    <h3>Practice HTML & CSS</h3>
+                    <div class="task-meta">
+                        <span class="priority-badge low">Low</span>
+                        <span>18 Aug 2026</span>
+                    </div>
+                </div>
+
+                <div class="task-actions">
+                    <button class="complete">✓</button>
+                    <button class="delete">🗑</button>
+                </div> -->
+
+             <!-- </div> -->
+
+        </section> 
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
